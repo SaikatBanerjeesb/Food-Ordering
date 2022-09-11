@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    .container{
+        display: flex;
+        /* align-items: center; */
+    }
+    header::before{
+        content: '''';
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        height: 50px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+
+    }
+    img{
+        /* padding: 5px 5px; */
+        width: 50px;
+        height: 50px;
+    }
+    nav{
+        font-size: large;
+        padding: 5px 80px;
+    }
+    a{
+        text-decoration: none;
+        padding: 5px 5px;
+        color: white;
+    }
+    a:hover{
+        color:blue;
+        text-decoration: underline;
+    }
+   
+    section::before{
+        content: "";
+        background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600');
+        /* background: no-repeat; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 300px;
+        width: 100%;
+        z-index: -2;
+        opacity: 1;
+
+    }
+    section{
+        padding-top: 50px;
+        text-align: center;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+     button{
+        border:2px solid white;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-top: 10px;
+        padding:5px 5px;
+     }   
+     button:hover{
+        background-color: white;
+        cursor: pointer;
+     }
+        
+   .view{
+    display: flex;
+    position: relative;
+    top:50px;
+    left: 30px;
+
+   } #box{
+        border:3px solid red;
+        background-color: rgb(238, 169, 169);
+        width:450px;
+        height: 300px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 20px;
+        margin: 5px 10px;
+    }
+    #img{
+        height: 80px;
+        width: 100px;
+        border-radius: 100px;
+    }
+    h2{
+       text-align: center ;
+       position: relative;
+       top: 30px;
+       font-size: xx-large;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <header class="container">
+        <img src="https://images.pexels.com/photos/6187598/pexels-photo-6187598.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <nav>
+            <a href="">Home</a>
+            <a href=".view">Services</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+        </nav>
+    </header>
+    <section>
+        <h1 class="content">Welcome to foodiecode</h1>
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil iure est incidunt adipisci assumenda aspernatur, officiis ea necessitatibus iste.</div>
+        <button>Order now</button>
+    </section>
+    <h2>Our Services</h2>
+    <div class="view">
+        <div id="box"><img id="img" src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h3>Food Ordering</h3> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, distinctio?     </div>
+        <div id="box"><img id="img" src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h3>Catering</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maiores.</div>
+        <div id="box"><img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcx-124VXC9Gp2uWiZVqwbAD9Y3Mt9qZ2MSw&usqp=CAU" alt=""><h3>Bulk Ordering</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, asperiores!</div>
+        <!-- <div id="box"></div> -->
+    </div>
+    
+    
+</body>
+</html>
